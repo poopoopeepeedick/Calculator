@@ -1,35 +1,27 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Calculator</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <div>
-        <div id="keyboard">
-        <button class="operator" id="clear">AC</button>
-        <button data-delete>Del</button>
-        <button class="number" id="1">1</button>
-        <button class="number" id="2">2</button>
-        <button class="number" id="3">3</button>
-        <button class="number" id="4">4</button>
-        <button class="number" id="5">5</button>
-        <button class="number" id="6">6</button>
-        <button class="number" id="7">7</button>
-        <button class="number" id="8">8</button>
-        <button class="number" id="9">9</button>
-        <button class="number" id="0">0</button>
-        <button class="operator" id="+">+</button>
-        <button class="operator" id="/">/</button>
-        <button class="operator" id="-">-</button>
-        <button class="operator" id="*">*</button>
-        <button class="number" id=".">.</button>
-        <button class="operator" id="=">=</button>
-        </div>
+                    <form id="calculator" class="calculator">
+                            <input required step="any" placeholder="6969" type="number" name="number_1" />
+                            <select name="operator" id="operator">
+                                <option value="+" selected>+</option>
+                                <option value="-">-</option>
+                                <option value="/">/</option>
+                                <option value="*">*</option>
+                            </select>
+                            <input required step="any" placeholder="420" type="number" name="number_2" />
+                            <input type="submit" value="calculate">
+                    </form>
+                    <p id="demo"></p>
+                    <div class="result" style="margin-top: 10px; width: fit-content; border: 2px solid red; padding: 10px;">
+                        Result: <span id="result">N/A</span>
+                    </div>
         <script src="calc-script.js" async defer></script>
-    
     </body>
 </html>
